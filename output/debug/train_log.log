@@ -1,0 +1,2 @@
+2025-01-30 11:56:15,568 - PixArt - WARNING - lewei scale: 2.0, base size: 32
+2025-01-30 11:56:17,638 - PixArt - INFO - Load checkpoint from /storage/home/hcoda1/5/hyou37/scratch/wzhou/ckpts/PixArt-Sigma-XL-2-512-MS.pth. Load ema: False.
