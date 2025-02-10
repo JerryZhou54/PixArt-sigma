@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=1 python3 scripts/inference.py \
+    --model_path /home/hyou/Efficient-Diffusion/PixArt-sigma/output/adaptive_ratio_0.2_lora/checkpoints/epoch_1_step_11000.pth \
+    --load_from /sensei-fs/users/hyou/ckpts/pretrained_models/PixArt-Sigma-XL-2-512-MS.pth \
+    --dataset_path /sensei-fs/users/hyou/Efficient-Diffusion/Efficient-Diffusion/t2i-512/pixart_sigma_adaptive_ratio_0.2_lora/checkpoints/epoch_1_step_16500.pth \
+    --image_size 512 \
+    --version sigma \
+    --pipeline_load_from /sensei-fs/users/hyou/ckpts/pretrained_models/pixart_sigma_sdxlvae_T5_diffusers \
+    --bs 128 \
+    --sampling_algo dpm-solver \
+    --decoder_mod \
+    --decoder_mod_ratio 0.2 \
+    --save_root /home/hyou/Efficient-Diffusion/PixArt-sigma/output/results \
+    --config configs/pixart_sigma_config/PixArt_sigma_xl2_img512_internalms.py \
